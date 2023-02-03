@@ -1,21 +1,28 @@
 import React, { useState } from 'react';
 
 //? redux-toolkit //
-import { useAppSelector } from '../../store/hooks';
+import { useAppSelector, useAppDispatch } from '../../store/hooks';
 
 //? react-router-dom //
 import { Link } from 'react-router-dom';
 
+//? context-api //
+import { ThemeContext } from '../../context/ThemeContext';
+
 //? icons //
-import { BsFillPatchCheckFill } from 'react-icons/bs';
+import { BsFillPatchCheckFill, BsHouse } from 'react-icons/bs';
 import { FiMoon, FiUsers, FiSun } from 'react-icons/fi';
 import { AiOutlineComment } from 'react-icons/ai';
 import { HiOutlinePhotograph } from 'react-icons/hi';
-import { GrHomeRounded } from 'react-icons/gr';
+
+//? context-api //
+import { Theme } from '../../types/types';
 
 const SideNavBar = () => {
   const navbarState = useAppSelector((state) => state.navbar.navbarSlice.navbarState);
-  const [darkModeToggle, setDarkModeToggle] = useState<boolean>(false);
+  const dispatch = useAppDispatch();
+  const [darkModeIconToggle, setDarkModeIconToggle] = useState<boolean>(false);
+  const { theme, setTheme } = React.useContext(ThemeContext) as Theme;
 
   //* Sürekli yazmamak için tekrar eden stiller değişkene atıldı //
   const homeTodosStyle: string =
@@ -27,7 +34,8 @@ const SideNavBar = () => {
   const textStyleAll: string = 'flex-1 ml-3 whitespace-nowrap font-roboto';
 
   const darkModeHandle = function (): void {
-    setDarkModeToggle(!darkModeToggle);
+    setDarkModeIconToggle(!darkModeIconToggle);
+    setTheme(theme === 'dark' ? 'light' : 'dark');
   };
 
   return (
@@ -44,8 +52,8 @@ const SideNavBar = () => {
         <ul className='space-y-2'>
           <li>
             <Link to='/' className={linkStyleAll}>
-              <GrHomeRounded aria-hidden='true' className={homeTodosStyle}></GrHomeRounded>
-              <span className='ml-3'>Home</span>
+              <BsHouse aria-hidden='true' className={homeTodosStyle}></BsHouse>
+              <span className={textStyleAll}>Home</span>
             </Link>
           </li>
           <li>
@@ -77,7 +85,7 @@ const SideNavBar = () => {
               onClick={() => darkModeHandle()}
               className='flex cursor-pointer items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700'
             >
-              {darkModeToggle ? (
+              {darkModeIconToggle ? (
                 <FiSun aria-hidden='true' className={comUsPhDmStyle}></FiSun>
               ) : (
                 <FiMoon aria-hidden='true' className={comUsPhDmStyle}></FiMoon>
