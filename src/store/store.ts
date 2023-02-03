@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
-import reducers from './reducers/requestSlice';
+import reducers from './reducers/reducersIndex';
 
 /*
  * Her ne kadar bu proje için state management fazla olabilsede
@@ -8,7 +8,9 @@ import reducers from './reducers/requestSlice';
 
 export const store = configureStore({
   reducer: {
-    requestStore: reducers,
+    requestState: reducers,
+    navbar: reducers,
+
   },
 });
 

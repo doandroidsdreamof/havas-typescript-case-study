@@ -13,7 +13,6 @@ export const requestInit = createSlice({
   },
 });
 
-export const { requestInitToggle } = requestInit.actions;
-export default combineReducers({
-  requestInitSlice: requestInit.reducer,
-});
+
+
+export default requestInit

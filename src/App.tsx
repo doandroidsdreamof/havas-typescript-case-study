@@ -1,20 +1,18 @@
-import { useEffect } from 'react'
-// ? redux //
-import { useDispatch, useSelector } from 'react-redux'
-import { requestInitToggle } from './store/reducers/requestSlice'
-import { useAppSelector, useAppDispatch } from './store/hooks'
+//? pages //
+import { HomePage, CommentsPage, PhotosPage, TodosPage, UsersPage } from './pages/index';
+
+//? react-router-dom //
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
-   const dispatch = useDispatch()
-
-
-
-
   return (
-<>
-
-
-</>
+    <Routes>
+      <Route path='/' element={<HomePage />} />
+      <Route path='/comments' element={<CommentsPage />} />
+      <Route path='/photos' element={<PhotosPage />} />
+      <Route path='/todos' element={<TodosPage />} />
+      <Route path='/users' element={<UsersPage />} />
+    </Routes>
   );
 }
 
