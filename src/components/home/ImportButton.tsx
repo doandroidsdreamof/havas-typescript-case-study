@@ -1,21 +1,30 @@
-import React from 'react'
+import React from 'react';
 
 //? flowbite //
-import { Button } from 'flowbite-react'
+import { Button } from 'flowbite-react';
 
 //? icons //
-import { AiOutlinePlus } from 'react-icons/ai'
+import { AiOutlinePlus } from 'react-icons/ai';
+
+//? redux-toolkit //
+import { useAppDispatch } from '../../store/hooks';
+import { requestInitToggle } from '../../store/reducers/reducersIndex';
 
 const ImportButton = () => {
+  const dispatch = useAppDispatch();
+
+  const handleRequest = function () {
+    dispatch(requestInitToggle());
+  };
+
   return (
     <div>
-    <Button>
-      Import Posts
-      <AiOutlinePlus className="ml-2 h-5 w-5" />
-    </Button>
-  </div>
+      <Button className='font-roboto' onClick={() => handleRequest()}>
+        Import Posts
+        <AiOutlinePlus className='ml-2' />
+      </Button>
+    </div>
+  );
+};
 
-  )
-}
-
-export default ImportButton
+export default ImportButton;
