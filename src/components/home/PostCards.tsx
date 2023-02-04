@@ -19,9 +19,9 @@ const PostCards = () => {
   const reduxImportState = useAppSelector((state) => state.requestState.requestInitSlice.requestState);
 
   useEffect(() => {
-  if(reduxImportState === true){
-    getPosts();
-  }
+    if (reduxImportState === true) {
+      getPosts();
+    }
   }, [reduxImportState]);
   /*
   title?: string;
@@ -33,7 +33,7 @@ const PostCards = () => {
     const postsData = getRequest(postsUrl);
     postsData
       .then((data) => {
-        setPots(data);
+        setPots(data.slice(0, -1));
       })
       .catch((err) => {
         console.log(err);
@@ -46,12 +46,12 @@ const PostCards = () => {
         ? post &&
           post.map((items, id) => (
             <>
-              <div className='max-w-sm '>
+              <div key={id} className='max-w-sm max-h-60'>
                 <Card>
-                  <h5 className='text-2xl font-bold tracking-tight text-gray-900 dark:text-white'>
+                  <h5 className='text-lg font-bold tracking-tight text-gray-900 dark:text-white'>
                     Noteworthy technology acquisitions 2021
                   </h5>
-                  <p className='font-normal text-gray-700 dark:text-gray-400'>
+                  <p className='font-normal text-sm text-gray-700 dark:text-gray-400'>
                     Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological
                     order.
                   </p>

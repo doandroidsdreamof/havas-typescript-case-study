@@ -1,6 +1,6 @@
 import { createSlice, combineReducers } from '@reduxjs/toolkit';
 
-//* Card component'i buttonunun state'i //
+//* Post component (homePage) buttonunun state'i //
  const requestInit = createSlice({
   name: 'requestState',
   initialState: {
