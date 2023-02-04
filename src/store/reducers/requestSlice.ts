@@ -8,7 +8,10 @@ import { createSlice, combineReducers } from '@reduxjs/toolkit';
   },
   reducers: {
     requestInitToggle: (state) => {
-      state.requestState = !state.requestState;
+      state.requestState = true;
+    },
+    requestRemove: (state) => {
+      state.requestState = false;
     },
   },
 });

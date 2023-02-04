@@ -12,17 +12,21 @@ import { postsUrl } from '../../api/apiIndex';
 import { Root } from '../../types/interfaces';
 
 //? redux-toolkit //
-import { useAppSelector } from '../../store/hooks';
+import { useAppSelector, useAppDispatch } from '../../store/hooks';
 
 const PostCards = () => {
   const [post, setPots] = useState<Root>([]);
   const reduxImportState = useAppSelector((state) => state.requestState.requestInitSlice.requestState);
+  const dispatch = useAppDispatch();
 
   useEffect(() => {
     if (reduxImportState === true) {
       getPosts();
+    }else{
+      setPots([])
     }
   }, [reduxImportState]);
+
   /*
   title?: string;
   body?: string;
