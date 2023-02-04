@@ -40,9 +40,10 @@ const PostCards = () => {
 
     postsData
       .then((data) => {
-        if(reduxSearchValue.length > 0){
+        if (reduxSearchValue.length > 0) {
+          //* Refactoring Todos => ölçeklenebilirlik için binary search tree eklenebilir *//
           setPots(data.filter((items) => items.body?.includes(reduxSearchValue)));
-        }else{
+        } else {
           setPots(data.slice(0, -1));
         }
       })
