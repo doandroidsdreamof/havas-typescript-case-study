@@ -1,7 +1,7 @@
 <div align="center">
 
   <img src="assets/logo.png" alt="logo" width="200" height="auto" />
-  <h1>Havas-TypeScript-Case-Study</h1>
+  <h1>Young-Coders-Club-TypeScript-Case-Study</h1>
 
 
 <!-- Badges -->
