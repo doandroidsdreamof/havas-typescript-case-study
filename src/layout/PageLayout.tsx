@@ -5,7 +5,9 @@ import { LayoutProps } from '../types/interfaces';
 //? react-awesome-reveal //
 import { Fade } from 'react-awesome-reveal';
 
-// comments && posts
+
+
+
 
 const PageLayout: React.FunctionComponent<LayoutProps> = (props: LayoutProps) => {
   return (

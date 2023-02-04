@@ -14,12 +14,16 @@ import { Root } from '../../types/interfaces';
 //? redux-toolkit //
 import { useAppSelector, useAppDispatch } from '../../store/hooks';
 
-//? react-awesome-reveal //
-import { Reveal } from 'react-awesome-reveal';
+
+
+
 
 const PostCards = () => {
   const [post, setPots] = useState<Root>([]);
   const reduxImportState = useAppSelector((state) => state.requestState.requestInitSlice.requestState);
+  const reduxSearchValue = useAppSelector((state) => state.searchInputValue.searchInputSlice);
+  console.log("🚀 ~ file: PostCards.tsx:25 ~ PostCards ~ reduxSearchValue", reduxSearchValue)
+
   const dispatch = useAppDispatch();
 
   useEffect(() => {
@@ -54,14 +58,17 @@ const PostCards = () => {
         ? post &&
           post.map((items, id) => (
             <>
-                <div key={id} className=' max-w-sm max-h-60  '>
+
+              <div className=' max-w-sm max-h-60  '>
                   <Card>
                     <h5 className=' line-clamp-1 text-lg font-bold tracking-tight text-gray-900 dark:text-white'>
                       {items?.title}
                     </h5>
+
                     <p className='line-clamp-3 font-normal text-sm text-gray-700 dark:text-gray-400'>{items?.body}</p>
                   </Card>
                 </div>
+
 
             </>
           ))
