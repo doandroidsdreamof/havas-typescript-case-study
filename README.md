@@ -186,6 +186,7 @@ https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments
 - [x] Reusable Functions && Components
 - [x] Responsive Layout
 - [ ] Test
+- [x] Sortable Todos
 
 <!-- Contact -->
 
