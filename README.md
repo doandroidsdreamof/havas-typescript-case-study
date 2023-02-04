@@ -188,6 +188,9 @@ https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments
 - [ ] Test
 - [x] Sortable Todos
 - [ ] Reducement of Card Components
+- [ ] Lazy Loads
+
+
 
 <!-- Contact -->
 

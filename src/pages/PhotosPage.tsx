@@ -1,21 +1,16 @@
-import React from 'react'
+import React from 'react';
 
 //? components //
 import TopNavBar from '../components/navigation/TopNavBar';
 import SideNavBar from '../components/navigation/SideNavBar';
+import PhotosCard from '../components/photos/PhotosCard';
+
 
 //? layouts //
-import PageLayout from '../layout/PageLayout';
-
+import PhotoPageLayout from '../layout/PhotoPageLayout';
 
 const PhotosPage = () => {
-  return (
-    <PageLayout
-    TopNavBar={<TopNavBar />}
-    SideNavBar={<SideNavBar />}
+  return <PhotoPageLayout TopNavBar={<TopNavBar />} SideNavBar={<SideNavBar />} PhotosCard={<PhotosCard />} />;
+};
 
-     />
-  )
-}
-
-export default PhotosPage
+export default PhotosPage;
