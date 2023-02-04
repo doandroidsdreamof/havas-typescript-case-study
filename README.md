@@ -50,7 +50,6 @@
 - [Getting Started](#toolbox-getting-started)
   * [Prerequisites](#bangbang-prerequisites)
   * [Installation](#gear-installation)
-  * [Running Tests](#test_tube-running-tests)
   * [Run Locally](#running-run-locally)
   * [Deployment](#triangular_flag_on_post-deployment)
 - [Usage](#eyes-usage)
@@ -139,29 +138,14 @@ To run this project, you will need to add the following environment variables to
 <!-- Prerequisites -->
 ### :bangbang: Prerequisites
 
-This project uses Yarn as package manager
-
-```bash
- npm install --global yarn
-```
-
 <!-- Installation -->
 ### :gear: Installation
 
 Install my-project with npm
 
 ```bash
-  yarn install my-project
+  npm install my-project
   cd my-project
-```
-
-<!-- Running Tests -->
-### :test_tube: Running Tests
-
-To run tests, run the following command
-
-```bash
-  yarn test test
 ```
 
 <!-- Run Locally -->
@@ -182,13 +166,13 @@ Go to the project directory
 Install dependencies
 
 ```bash
-  yarn install
+  npm install
 ```
 
 Start the server
 
 ```bash
-  yarn start
+  npm dev
 ```
 
 
@@ -198,30 +182,44 @@ Start the server
 To deploy this project run
 
 ```bash
-  yarn deploy
+  npm deploy
 ```
 
 
 <!-- Usage -->
 ## :eyes: Usage
 
-Use this space to tell a little more about your project and how it can be used. Show additional screenshots, code samples, demos or link to other resources.
+```recommended vscode extension
+
+Better Comments
+https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments
+
+```
 
 
 ```javascript
-import Component from 'my-project'
 
-function App() {
-  return <Component />
-}
+//? => imports
+//! => important
+//* => notes && refactoring notes
+
 ```
+
 
 <!-- Roadmap -->
 ## :compass: Roadmap
 
-* [x] Todo 1
-* [ ] Todo 2
-
+* [x] Post Component
+* [x] Todo Component
+* [ ] User Component
+* [ ] Comment Component
+* [ ] Photos Component
+* [x] Dark Mode
+* [x] Routing
+* [ ] authentication
+* [ ] Pagination
+* [x] Reusable Functions && Components
+* [x] Responsive Layout
 
 <!-- Contact -->
 ## :handshake: Contact

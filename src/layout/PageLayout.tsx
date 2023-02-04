@@ -2,6 +2,7 @@ import React from 'react';
 
 //? types && interfaces //
 import { LayoutProps } from '../types/interfaces';
+
 //? react-awesome-reveal //
 import { Fade } from 'react-awesome-reveal';
 

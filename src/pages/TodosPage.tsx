@@ -3,15 +3,17 @@ import React from 'react'
 //? components //
 import TopNavBar from '../components/navigation/TopNavBar';
 import SideNavBar from '../components/navigation/SideNavBar';
+import TodosCard from '../components/todos/TodosCard';
 
 //? layouts //
-import PageLayout from '../layout/PageLayout';
+import TodosPageLayout from '../layout/TodosPageLayout';
 
 const TodosPage = () => {
   return (
-    <PageLayout
+    <TodosPageLayout
     TopNavBar={<TopNavBar />}
     SideNavBar={<SideNavBar />}
+    TodosCard={<TodosCard />}
 
      />
   )

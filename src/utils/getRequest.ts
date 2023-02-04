@@ -2,7 +2,7 @@
 import axios, {AxiosError, AxiosResponse} from "axios";
 
 //? types && interfaces //
-import { Posts, Root } from '../types/interfaces';
+import { Posts, Root,TodosRoot } from '../types/interfaces';
 
 
 
@@ -17,7 +17,7 @@ const getRequest = async (url: string) =>{
           return error
         })
         .then((response) => {
-            const json: Root =  response.data;
+            const json =  response.data;
           return json;
         });
 
