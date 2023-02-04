@@ -14,9 +14,14 @@ import { BsFillPatchCheckFill, BsHouse } from 'react-icons/bs';
 import { FiMoon, FiUsers, FiSun } from 'react-icons/fi';
 import { AiOutlineComment } from 'react-icons/ai';
 import { HiOutlinePhotograph } from 'react-icons/hi';
+import { FaSignOutAlt } from 'react-icons/fa';
+
 
 //? context-api //
 import { Theme } from '../../types/types';
+
+
+
 
 const SideNavBar = () => {
   const navbarState = useAppSelector((state) => state.navbar.navbarSlice.navbarState);
@@ -78,6 +83,12 @@ const SideNavBar = () => {
             <Link to='/photos' className={linkStyleAll}>
               <HiOutlinePhotograph aria-hidden='true' className={comUsPhDmStyle}></HiOutlinePhotograph>
               <span className={textStyleAll}>Photos</span>
+            </Link>
+          </li>
+          <li>
+            <Link to='/photos' className={linkStyleAll}>
+              <FaSignOutAlt aria-hidden='true' className={comUsPhDmStyle}></FaSignOutAlt>
+              <span className={textStyleAll}>Sign out</span>
             </Link>
           </li>
           <li>

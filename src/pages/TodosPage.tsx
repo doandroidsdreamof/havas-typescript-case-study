@@ -1,8 +1,19 @@
 import React from 'react'
 
+//? components //
+import TopNavBar from '../components/navigation/TopNavBar';
+import SideNavBar from '../components/navigation/SideNavBar';
+
+//? layouts //
+import PageLayout from '../layout/PageLayout';
+
 const TodosPage = () => {
   return (
-    <div>TodosPage</div>
+    <PageLayout
+    TopNavBar={<TopNavBar />}
+    SideNavBar={<SideNavBar />}
+
+     />
   )
 }
 
