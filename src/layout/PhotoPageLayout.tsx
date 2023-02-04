@@ -13,7 +13,6 @@ const PhotoPageLayout: React.FunctionComponent<LayoutProps> = (props: LayoutProp
         <div className=''>{props.TopNavBar}</div>
         <div className=' px-9  md:px-2 sm:ml-64 justify-center flex-wrap-reverse  flex flex-col-reverse gap-5 md:flex-row-reverse md:items-center  '>
         <PageTitle title={'Photos'} />
-
         </div>
         <div className='h-fit pb-5 gap-20 flex justify-center flex-row  flex-wrap    bg-gray-100  dark:bg-gray-900 md:px-2 sm:ml-64    '>
        {props.PhotosCard}

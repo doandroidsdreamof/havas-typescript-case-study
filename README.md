@@ -176,9 +176,10 @@ https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments
 
 - [x] Post Component
 - [x] Todo Component
-- [ ] User Component
-- [ ] Comment Component
-- [ ] Photos Component
+- [x] User Component
+- [x] Comment Component
+- [x] Photos Component
+- [ ] CRUD
 - [x] Dark Mode
 - [x] Routing
 - [ ] authentication
@@ -188,7 +189,7 @@ https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments
 - [ ] Test
 - [x] Sortable Todos
 - [ ] Reducement of Card Components
-- [ ] Lazy Loads
+- [x] Lazy Loads
 
 
 

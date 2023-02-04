@@ -44,9 +44,6 @@ const PhotosCard = () => {
             <>
               <div className=' max-w-sm max-h-60 '>
                 <Card className=' '>
-                  <h5 className=' line-clamp-1 w-60 text-sm font-bold tracking-tight text-gray-900 dark:text-white'>
-                    {items?.title}
-                  </h5>
                   <div>
                     <LazyLoad className='flex justify-center'>
                       <img className='h-52 ' src={items.url} alt={items.title} />
