@@ -3,7 +3,6 @@
   <img src="./src/assets/svg/box.svg" alt="logo" width="200" height="auto" />
   <h1>Young-Coders-Club-TypeScript-Case-Study</h1>
 
-
 <!-- Badges -->
 <p>
   <a href="https://github.com/Louis3797/awesome-readme-template/graphs/contributors">
@@ -40,37 +39,37 @@
 <br />
 
 <!-- Table of Contents -->
+
 # :notebook_with_decorative_cover: Table of Contents
 
 - [About the Project](#star2-about-the-project)
-  * [Screenshots](#camera-screenshots)
-  * [Tech Stack](#space_invader-tech-stack)
-  * [Features](#dart-features)
-  * [Environment Variables](#key-environment-variables)
+  - [Screenshots](#camera-screenshots)
+  - [Tech Stack](#space_invader-tech-stack)
+  - [Features](#dart-features)
+  - [Environment Variables](#key-environment-variables)
 - [Getting Started](#toolbox-getting-started)
-  * [Prerequisites](#bangbang-prerequisites)
-  * [Installation](#gear-installation)
-  * [Run Locally](#running-run-locally)
-  * [Deployment](#triangular_flag_on_post-deployment)
+  - [Prerequisites](#bangbang-prerequisites)
+  - [Installation](#gear-installation)
+  - [Run Locally](#running-run-locally)
+  - [Deployment](#triangular_flag_on_post-deployment)
 - [Usage](#eyes-usage)
 - [Roadmap](#compass-roadmap)
 - [Contact](#handshake-contact)
 
-
-
 <!-- About the Project -->
+
 ## :star2: About the Project
 
-
 <!-- Screenshots -->
+
 ### :camera: Screenshots
 
 <div align="center">
   <img src="https://placehold.co/600x400?text=Your+Screenshot+here" alt="screenshot" />
 </div>
 
-
 <!-- TechStack -->
+
 ### :space_invader: Tech Stack
 
 <details>
@@ -86,37 +85,17 @@
   <summary>Server</summary>
   <ul>
     <li><a href="https://www.typescriptlang.org/">Typescript</a></li>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-    <li><a href="https://go.dev/">Golang</a></li>
-    <li><a href="https://nestjs.com/">Nest.js</a></li>
-    <li><a href="https://socket.io/">SocketIO</a></li>
-    <li><a href="https://www.prisma.io/">Prisma</a></li>
-    <li><a href="https://www.apollographql.com/">Apollo</a></li>
-    <li><a href="https://graphql.org/">GraphQL</a></li>
   </ul>
 </details>
 
 <details>
 <summary>Database</summary>
   <ul>
-    <li><a href="https://www.mysql.com/">MySQL</a></li>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
-    <li><a href="https://redis.io/">Redis</a></li>
-    <li><a href="https://neo4j.com/">Neo4j</a></li>
-    <li><a href="https://www.mongodb.com/">MongoDB</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>DevOps</summary>
-  <ul>
-    <li><a href="https://www.docker.com/">Docker</a></li>
-    <li><a href="https://www.jenkins.io/">Jenkins</a></li>
-    <li><a href="https://circleci.com/">CircleCLI</a></li>
   </ul>
 </details>
 
 <!-- Features -->
+
 ### :dart: Features
 
 - Feature 1
@@ -124,6 +103,7 @@
 - Feature 3
 
 <!-- Env Variables -->
+
 ### :key: Environment Variables
 
 To run this project, you will need to add the following environment variables to your .env file
@@ -133,12 +113,15 @@ To run this project, you will need to add the following environment variables to
 `ANOTHER_API_KEY`
 
 <!-- Getting Started -->
-## 	:toolbox: Getting Started
+
+## :toolbox: Getting Started
 
 <!-- Prerequisites -->
+
 ### :bangbang: Prerequisites
 
 <!-- Installation -->
+
 ### :gear: Installation
 
 Install my-project with npm
@@ -149,6 +132,7 @@ Install my-project with npm
 ```
 
 <!-- Run Locally -->
+
 ### :running: Run Locally
 
 Clone the project
@@ -175,8 +159,8 @@ Start the server
   npm dev
 ```
 
-
 <!-- Deployment -->
+
 ### :triangular_flag_on_post: Deployment
 
 To deploy this project run
@@ -185,56 +169,57 @@ To deploy this project run
   npm deploy
 ```
 
-
 <!-- Usage -->
+
 ## :eyes: Usage
+
 ### recommended vscode extension
 
-```recommended vscode extension
-
+```
 
 Better Comments
 https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments
 
 ```
 
+### comment structure
 
 ```javascript
-
 //? => imports
 //! => important
 //* => notes && refactoring notes
-
 ```
 
-
 <!-- Roadmap -->
+
 ## :compass: Roadmap
 
-* [x] Post Component
-* [x] Todo Component
-* [ ] User Component
-* [ ] Comment Component
-* [ ] Photos Component
-* [x] Dark Mode
-* [x] Routing
-* [ ] authentication
-* [ ] Pagination
-* [x] Reusable Functions && Components
-* [x] Responsive Layout
+- [x] Post Component
+- [x] Todo Component
+- [ ] User Component
+- [ ] Comment Component
+- [ ] Photos Component
+- [x] Dark Mode
+- [x] Routing
+- [ ] authentication
+- [ ] Pagination
+- [x] Reusable Functions && Components
+- [x] Responsive Layout
+- [ ] Test
 
 <!-- Contact -->
+
 ## :handshake: Contact
 
 mutlukuytuoglu@gmail.com
 
 <!-- Acknowledgments -->
+
 ## :gem: Acknowledgements
 
 Use this section to mention useful resources and libraries that you have used in your projects.
 
- - [Shields.io](https://shields.io/)
- - [Awesome README](https://github.com/matiassingers/awesome-readme)
- - [Emoji Cheat Sheet](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md#travel--places)
- - [Readme Template](https://github.com/othneildrew/Best-README-Template)
-
+- [Shields.io](https://shields.io/)
+- [Awesome README](https://github.com/matiassingers/awesome-readme)
+- [Emoji Cheat Sheet](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md#travel--places)
+- [Readme Template](https://github.com/othneildrew/Best-README-Template)
