@@ -167,7 +167,7 @@ https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments
 ```javascript
 //? => imports
 //! => important
-//* => notes && refactoring notes
+//* => notes && refactoring todos
 ```
 
 <!-- Roadmap -->
@@ -182,7 +182,7 @@ https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments
 - [ ] CRUD
 - [x] Dark Mode
 - [x] Routing
-- [ ] authentication
+- [ ] Authentication
 - [ ] Pagination
 - [x] Reusable Functions && Components
 - [x] Responsive Layout
