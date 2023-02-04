@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="./src/assets/svg/box.svg" alt="logo" width="200" height="auto" style="fill:white, backgroung-color:white" />
+  <img src="./src/assets/svg/box.svg" alt="logo" width="200" height="auto" style="color:white;"/>
   <h1>Young-Coders-Club-TypeScript-Case-Study</h1>
 
 
