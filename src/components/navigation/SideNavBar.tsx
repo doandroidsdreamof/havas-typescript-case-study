@@ -32,12 +32,12 @@ const SideNavBar = () => {
 
   //* Sürekli yazmamak için tekrar eden stiller değişkene atıldı //
   const homeTodosStyle: string =
-    'flex-shrink-0 w-6 h-6  text-gray-500 0 active:bg-violet-700 active:text-white transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white';
+    'flex-shrink-0 w-6 h-6  text-gray-500 0 active:bg-violet-700 dark:active:bg-blue-600 active:text-white transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white';
   const comUsPhDmStyle: string =
-    'flex-shrink-0 w-6 h-6 text-gray-500  0 active:bg-violet-700  active:text-white transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white';
+    'flex-shrink-0 w-6 h-6 text-gray-500  0 active:bg-violet-700 dark:active:bg-blue-600  active:text-white transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white';
   const linkStyleAll: string =
-    'flex items-center p-2 text-base font-normal active:text-white 0 active:bg-violet-700  text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700';
-  const textStyleAll: string = 'flex-1 active:text-white ml-3 active:text-white  whitespace-nowrap 0 active:bg-violet-700  font-roboto';
+    'flex items-center p-2 text-base font-normal active:text-white dark:active:bg-blue-600 active:bg-violet-700  text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700';
+  const textStyleAll: string = 'flex-1 active:text-white ml-3 dark:active:bg-blue-600 active:text-white  whitespace-nowrap 0 active:bg-violet-700  font-roboto';
 
   const darkModeHandle = function (): void {
     setDarkModeIconToggle(!darkModeIconToggle);
@@ -95,7 +95,7 @@ const SideNavBar = () => {
           <li>
             <div
               onClick={() => darkModeHandle()}
-              className='flex cursor-pointer active:text-white active:bg-violet-700  items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700'
+              className='flex cursor-pointer active:text-white active:bg-violet-700 dark:active:bg-blue-600  items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700'
             >
               {darkModeIconToggle ? (
                 <FiSun aria-hidden='true' className={comUsPhDmStyle}></FiSun>
