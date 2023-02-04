@@ -188,8 +188,10 @@ To deploy this project run
 
 <!-- Usage -->
 ## :eyes: Usage
+### recommended vscode extension
 
 ```recommended vscode extension
+
 
 Better Comments
 https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments
