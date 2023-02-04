@@ -18,6 +18,15 @@ export interface ThemeProps {
   children?: React.ReactNode;
 }
 
+
+
+//* Page Title //
+export interface PageTitleProps {
+  title: string;
+}
+
+
+
 //* Post request //
 
 export type Root = Posts[];

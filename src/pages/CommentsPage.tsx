@@ -6,11 +6,11 @@ import SideNavBar from '../components/navigation/SideNavBar';
 import SearchInput from '../components/common/SearchInput'
 
 //? layouts //
-import PageLayout from '../layout/PageLayout';
+import CommentsPageLayout from '../layout/CommentsPageLayout';
 
 const CommentsPage = () => {
   return (
-    <PageLayout
+    <CommentsPageLayout
     TopNavBar={<TopNavBar />}
     SideNavBar={<SideNavBar />}
     SearchInput={<SearchInput />}
