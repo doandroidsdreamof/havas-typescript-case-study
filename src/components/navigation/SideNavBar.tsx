@@ -16,13 +16,8 @@ import { AiOutlineComment } from 'react-icons/ai';
 import { HiOutlinePhotograph } from 'react-icons/hi';
 import { FaSignOutAlt } from 'react-icons/fa';
 
-
 //? context-api //
 import { Theme } from '../../types/types';
-
-
-
-
 
 const SideNavBar = () => {
   const navbarState = useAppSelector((state) => state.navbar.navbarSlice.navbarState);
@@ -37,7 +32,8 @@ const SideNavBar = () => {
     'flex-shrink-0 w-6 h-6 text-gray-500  0 active:bg-violet-700 dark:active:bg-blue-600  active:text-white transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white';
   const linkStyleAll: string =
     'flex items-center p-2 text-base font-normal active:text-white dark:active:bg-blue-600 active:bg-violet-700  text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700';
-  const textStyleAll: string = 'flex-1 active:text-white ml-3 dark:active:bg-blue-600 active:text-white  whitespace-nowrap 0 active:bg-violet-700  font-roboto';
+  const textStyleAll: string =
+    'flex-1 active:text-white ml-3 dark:active:bg-blue-600 active:text-white  whitespace-nowrap 0 active:bg-violet-700  font-roboto';
 
   const darkModeHandle = function (): void {
     setDarkModeIconToggle(!darkModeIconToggle);
@@ -58,7 +54,7 @@ const SideNavBar = () => {
         <ul className='space-y-2'>
           <li>
             <Link to='/' className={linkStyleAll}>
-              <BsHouse  aria-hidden='true' className={homeTodosStyle}></BsHouse>
+              <BsHouse aria-hidden='true' className={homeTodosStyle}></BsHouse>
               <span className={textStyleAll}>Home</span>
             </Link>
           </li>

@@ -4,6 +4,7 @@ import React from 'react'
 import TopNavBar from '../components/navigation/TopNavBar';
 import SideNavBar from '../components/navigation/SideNavBar';
 import SearchInput from '../components/common/SearchInput'
+import CommentsCard from '../components/comments/CommentsCard';
 
 //? layouts //
 import CommentsPageLayout from '../layout/CommentsPageLayout';
@@ -14,6 +15,8 @@ const CommentsPage = () => {
     TopNavBar={<TopNavBar />}
     SideNavBar={<SideNavBar />}
     SearchInput={<SearchInput />}
+    CommentsCard={<CommentsCard />}
+
 
      />
   )

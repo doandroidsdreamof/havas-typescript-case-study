@@ -187,6 +187,7 @@ https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments
 - [x] Responsive Layout
 - [ ] Test
 - [x] Sortable Todos
+- [ ] Reducement of Card Components
 
 <!-- Contact -->
 

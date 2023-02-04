@@ -2,14 +2,15 @@ import React from 'react';
 //? components //
 import TopNavBar from '../components/navigation/TopNavBar';
 import SideNavBar from '../components/navigation/SideNavBar';
+import UsersCard from '../components/users/UsersCard';
 
 //? layouts //
-import PageLayout from '../layout/PageLayout';
+import UserPageLayout from '../layout/UserPageLayout';
 
 const UsersPage = () => {
   return (
     <>
-      <PageLayout TopNavBar={<TopNavBar />} SideNavBar={<SideNavBar />} />
+      <UserPageLayout TopNavBar={<TopNavBar />} SideNavBar={<SideNavBar />} UsersCard={<UsersCard />} />
     </>
   );
 };
