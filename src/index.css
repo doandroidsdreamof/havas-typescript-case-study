@@ -8,8 +8,3 @@
   padding: 0;
 }
 
-/*! :not(.notApplyDelay) => transtion efektleri çakışmasın diye kullanıldı (asideNavBar)*/
-
-body:not(.notApplyDelay) * {
-  @apply transition-colors duration-150 ease-in;
-}

@@ -14,6 +14,9 @@ import { Root } from '../../types/interfaces';
 //? redux-toolkit //
 import { useAppSelector, useAppDispatch } from '../../store/hooks';
 
+//? react-awesome-reveal //
+import { Reveal } from 'react-awesome-reveal';
+
 const PostCards = () => {
   const [post, setPots] = useState<Root>([]);
   const reduxImportState = useAppSelector((state) => state.requestState.requestInitSlice.requestState);
@@ -22,8 +25,8 @@ const PostCards = () => {
   useEffect(() => {
     if (reduxImportState === true) {
       getPosts();
-    }else{
-      setPots([])
+    } else {
+      setPots([]);
     }
   }, [reduxImportState]);
 
@@ -46,21 +49,20 @@ const PostCards = () => {
 
   return (
     <>
+
       {post.length > 0
         ? post &&
           post.map((items, id) => (
             <>
-              <div key={id} className='max-w-sm max-h-60'>
-                <Card>
-                  <h5 className='text-lg font-bold tracking-tight text-gray-900 dark:text-white'>
-                    Noteworthy technology acquisitions 2021
-                  </h5>
-                  <p className='font-normal text-sm text-gray-700 dark:text-gray-400'>
-                    Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological
-                    order.
-                  </p>
-                </Card>
-              </div>
+                <div key={id} className=' max-w-sm max-h-60  '>
+                  <Card>
+                    <h5 className=' line-clamp-1 text-lg font-bold tracking-tight text-gray-900 dark:text-white'>
+                      {items?.title}
+                    </h5>
+                    <p className='line-clamp-3 font-normal text-sm text-gray-700 dark:text-gray-400'>{items?.body}</p>
+                  </Card>
+                </div>
+
             </>
           ))
         : null}
